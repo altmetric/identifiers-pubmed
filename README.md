@@ -1,33 +1,19 @@
-# Identifiers - PubMed ID
+# This package has been deprecated
 
-Extract, validate and normalize [PubMed IDs](http://www.ncbi.nlm.nih.gov/pubmed).
+This package has been consolidated into [@altmetric/identifiers](https://github.com/altmetric/identifiers-js).
 
-**Current version:** 0.1.1  
-**Supported Node.js versions:** 18, 20, 22, 23
+## Migration
 
-## Installation
+Replace:
 
-Add the following to your `package.json` via `yarn add identifiers-pubmed` or `npm install --save identifiers-pubmed`:
-
-```shell
-"identifiers-pubmed": "^0.1.0"
+```js
+import { extract } from 'identifiers-pubmed';
 ```
 
-## Usage
+With:
 
-```javascript
-const pubmed = require("identifiers-pubmed");
-
-pubmed.extract(" 0123\n456\n ");
-//=> ["123", "456"]
+```js
+import { extract } from '@altmetric/identifiers/pubmed';
 ```
 
-## Other versions
-
-We also maintain versions of this library for [Ruby](https://github.com/altmetric/identifiers) and [PHP](https://github.com/altmetric/php-identifiers).
-
-## License
-
-Copyright © 2017-2024 Altmetric LLP
-
-Distributed under the [MIT License](http://opensource.org/licenses/MIT).
+See the [@altmetric/identifiers README](https://github.com/altmetric/identifiers-js#readme) for full documentation.
